@@ -1,0 +1,330 @@
+.App {
+  margin-top: 4rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.large_text {
+  font-size: 2.2rem;
+}
+
+.larger_text {
+  font-size: 3.3rem;
+}
+
+.white_button {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  font-size: large;
+}
+
+.white_button:hover {
+  background: none;
+  color: white;
+  border: solid 1px white;
+}
+
+.trans_button {
+  background: none;
+  color: white;
+  border: solid 1px white;
+  border-radius: 9px;
+  padding: 1rem 3rem;
+  margin: 1rem 1rem 1rem 0rem;
+  font-size: large;
+}
+
+.trans_button:hover {
+  background: white;
+  color: black;
+}
+
+.black_button {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 1.2rem 3rem;
+  margin: 1rem 1rem 1rem 0rem;
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.black_button:hover {
+  background: none;
+  color: black;
+  border: solid 1px black;
+}
+
+/* Initial hidden state */
+.slide_in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease-out;
+}
+
+/* Active state when visible */
+.slide_in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.list_now {
+  /* height: 10rem; */
+  background-color: black;
+  margin: 3rem 10rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-gap: 3rem;
+}
+
+.list_now h1 {
+  font-size: 4.5rem;
+  text-align: end;
+}
+
+.list_now_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list_now_right div {
+  width: 40%;
+}
+
+.list_now_right div button {
+  margin: 0rem;
+}
+
+.footer {
+  background-color: #263238;
+  color: white;
+  font-weight: 900;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouncing-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    margin-top: 3rem;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .large_text {
+    font-size: 1.3rem;
+  }
+
+  .larger_text {
+    font-size: 1.3rem;
+  }
+
+  .white_button {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 9px;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    font-size: large;
+  }
+
+  .white_button:hover {
+    background: none;
+    color: white;
+    border: solid 1px white;
+  }
+
+  .trans_button {
+    background: none;
+    color: white;
+    border: solid 1px white;
+    border-radius: 9px;
+    padding: 1rem 3rem;
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: large;
+  }
+
+  .trans_button:hover {
+    background: white;
+    color: black;
+  }
+
+  .black_button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 1.2rem 3rem;
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: large;
+    text-transform: capitalize;
+  }
+
+  .black_button:hover {
+    background: none;
+    color: black;
+    border: solid 1px black;
+  }
+
+  /* Initial hidden state */
+  .slide_in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.8s ease-out;
+  }
+
+  /* Active state when visible */
+  .slide_in.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .list_now {
+    /* height: 10rem; */
+    background-color: black;
+    margin: 3rem auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 1rem;
+    padding: 2rem 0rem;
+  }
+
+  .list_now h1 {
+    font-size: 2rem;
+    text-align: end;
+  }
+
+  .list_now_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .list_now_right div {
+    width: 100%;
+  }
+
+  .list_now_right div button {
+    margin: 0rem;
+  }
+
+  .footer {
+    background-color: #263238;
+    color: white;
+    font-weight: 900;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+
+  a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bouncing-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite;
+  }
+
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .dot:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  .dot:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}

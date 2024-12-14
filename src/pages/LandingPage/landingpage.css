@@ -1,0 +1,290 @@
+.banner_container {
+  height: 45rem;
+  background-image: url("../../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+  font-size: 6rem;
+  margin: 0rem;
+}
+
+.banner p {
+  font-size: 2.5rem;
+  margin-top: 0rem;
+}
+
+.welcome_statement {
+  padding: 5rem 10rem 1rem;
+}
+
+.statement {
+  width: 65%;
+}
+
+.hero_item_img {
+  height: 30rem;
+  width: 100%;
+}
+
+.hero_item_img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 1rem 10rem;
+  margin-bottom: 5rem;
+}
+
+.why_choose_us {
+  padding: 5rem 10rem;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.reason {
+  text-align: start;
+}
+
+.reason p {
+  margin: 0rem;
+}
+
+.reason hr {
+  width: 20%;
+  margin: 2rem 0rem;
+  border: 1px solid black;
+}
+
+.home_solutions {
+  height: 35rem;
+  background-image: url("../../images/hero1.jpg");
+  background-size: cover;
+}
+
+.home_solution {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 10rem;
+}
+
+.solutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  grid-gap: 3rem;
+}
+
+.about_us {
+  padding: 2rem 10rem;
+}
+
+.home_img {
+  height: 30rem;
+}
+
+.home_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.home_image {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-gap: 5rem;
+  padding: 1rem 10rem;
+}
+
+.home_image h1 {
+  font-size: 3rem;
+}
+
+.home_image div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Initial hidden state */
+.zoom_in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.9s ease-out;
+}
+
+/* Active state when visible */
+.zoom_in.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .banner_container {
+    height: 35rem;
+    background-image: url("../../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 2.1rem;
+    margin: 0rem;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+
+  .welcome_statement {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .statement {
+    width: 85%;
+  }
+
+  .hero_item_img {
+    height: 30rem;
+    width: 100%;
+  }
+
+  .hero_item_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .why_choose_us {
+    padding: 1rem;
+  }
+
+  .reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  .reason {
+    text-align: start;
+  }
+
+  .reason p {
+    margin: 0rem;
+  }
+
+  .reason hr {
+    width: 20%;
+    margin: 2rem 0rem;
+    border: 1px solid black;
+  }
+
+  .home_solutions {
+    height: max-content;
+    background-image: url("../../images/hero1.jpg");
+    background-size: cover;
+  }
+
+  .home_solution {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .solutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-gap: 3rem;
+  }
+
+  .about_us {
+    padding: 1rem;
+  }
+
+  .home_img {
+    height: 20rem;
+  }
+
+  .home_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .home_image {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .home_image h1 {
+    font-size: 3rem;
+  }
+
+  .home_image div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Initial hidden state */
+  .zoom_in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.9s ease-out;
+  }
+
+  /* Active state when visible */
+  .zoom_in.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
