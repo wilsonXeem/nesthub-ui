@@ -100,23 +100,7 @@ const LiveListingPage = () => {
                 <strong>Ref. No:</strong> {selectedListing.ref_no}
               </p>
               <p>
-                <strong>First Name:</strong> {selectedListing.first_name}
-              </p>
-              <p>
-                <strong>Last Name:</strong> {selectedListing.last_name}
-              </p>
-              <p>
-                <strong>Email:</strong> {selectedListing.email}
-              </p>
-              <p>
-                <strong>Phone:</strong> {selectedListing.phone}
-              </p>
-              <p>
-                <strong>WhatsApp Phone:</strong>{" "}
-                {selectedListing.whatsapp_phone}
-              </p>
-              <p>
-                <strong>Gender:</strong> {selectedListing.gender}
+                <strong>House type:</strong> {selectedListing.house_type}
               </p>
               <p>
                 <strong>Location:</strong> {selectedListing.location}
@@ -125,17 +109,44 @@ const LiveListingPage = () => {
                 <strong>Area:</strong> {selectedListing.area}
               </p>
               <p>
-                <strong>House Type:</strong> {selectedListing.house_type}
-              </p>
-              <p>
-                <strong>Rent:</strong> {selectedListing.rent}
-              </p>
-              <p>
                 <strong>Nearest Bus Stop:</strong>{" "}
                 {selectedListing.nearest_bus_stop}
               </p>
               <p>
+                <strong>Full rent:</strong> {selectedListing.rent}
+              </p>
+              <p>
+                <strong>Light situation:</strong>{" "}
+                {selectedListing.light_situation}
+              </p>
+              <p>
+                <strong>Meter situation:</strong>{" "}
+                {selectedListing.meter_situation}
+              </p>
+              <p>
+                <strong>Water situation:</strong>{" "}
+                {selectedListing.water_situation}
+              </p>
+              <p>
+                <strong>Home size:</strong> {selectedListing.home_size}
+              </p>
+              <p>
+                <strong>Expiry month:</strong> {selectedListing.expiry_month}
+              </p>
+              <p>
+                <strong>Accessibility:</strong> {selectedListing.accessibility}
+              </p>
+              <p>
+                <strong>Parking:</strong> {selectedListing.parking}
+              </p>
+              <p>
                 <strong>Building:</strong> {selectedListing.building}
+              </p>
+              <p>
+                <strong>Compound type:</strong> {selectedListing.compound}
+              </p>
+              <p>
+                <strong>Comments:</strong> {selectedListing.comments}
               </p>
               <p>
                 <strong>Intent to Leave:</strong>{" "}
