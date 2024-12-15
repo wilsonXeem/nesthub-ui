@@ -7,7 +7,7 @@ function Hero() {
   const navigate = useNavigate();
   const hero_items = [
     { item: "for sale", background: Hero1, link: "/contact" },
-    { item: "for rent", background: Hero2, link: "/contact" },
+    { item: "for rent", background: Hero2, link: "/listing" },
   ];
   return (
     <div class="hero">
