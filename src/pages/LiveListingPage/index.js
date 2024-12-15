@@ -17,7 +17,7 @@ const LiveListingPage = () => {
   };
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/listing/${category}`)
+    fetch(`https://nesthub-server.vercel.app/api/listing/${category}`)
       .then((res) => res.json())
       .then((json) => setListings(json.listing));
   }, [category]);

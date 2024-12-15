@@ -201,7 +201,7 @@ const LagosListingForm = () => {
     }
 
     try {
-      fetch("http://127.0.0.1:8000/api/listing/lagos", {
+      fetch("https://nesthub-server.vercel.app/api/listing/lagos", {
         method: "POST",
         body: form_data,
       })
